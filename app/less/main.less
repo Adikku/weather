@@ -1,0 +1,57 @@
+body {
+	background: #c3d9ff; /* Old browsers */
+	background: -moz-linear-gradient(-45deg,  #c3d9ff 0%, #b1c8ef 41%, #98b0d9 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg,  #c3d9ff 0%,#b1c8ef 41%,#98b0d9 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg,  #c3d9ff 0%,#b1c8ef 41%,#98b0d9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c3d9ff', endColorstr='#98b0d9',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.container {
+	width: 70%;
+	margin: 100px auto;
+	background: #fff;
+	padding: 40px;
+	text-align: center;
+	box-shadow: 0 30px 100px -30px #000;
+	overflow: hidden;
+	h3 {
+		text-align: left;
+		font-size: 12px;
+	}
+}
+.day {
+	display: inline-block;
+	width: 19%;
+	font-size: 18px;
+	border-top: 1px solid #cecece;
+	border-right: 1px solid #cecece;
+	z-index: 1;
+	position: relative;
+	&:last-child { border-right: 0;}
+	
+	.tmp {
+		margin-bottom: 0;
+	}
+	.weekday {
+		display: block;
+		font-size: 16px;
+	}
+	.desc {
+		font-size: 12px;
+	}
+	&.today {
+		border: 0;
+		color: steelblue;
+		margin-bottom: 30px;
+		display: block;
+		width: 100%;
+		padding: 50px 0;
+		clear: both;
+		font-size: 60px;
+		.tmp {
+			margin-top: 0;
+		}
+		.weekday {
+			font-size: 16px;
+		}
+	}
+}
